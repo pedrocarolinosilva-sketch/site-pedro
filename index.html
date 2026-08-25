@@ -1,34 +1,68 @@
 
-<!DOCTYPE html>
-<html lang="pt-br">
+ <!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        header {
-            background-color: rgb(0, 0, 0);
-            color: rgb(255, 255, 255);
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        } 
-        main {
-          background-color: rgb(255, 255, 255); 
-          color: rgb(0, 0, 0);
-          max-width: 800px;
-          margin: 0 auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Polêmicas dos Influencers Brasil</title>
 </head>
 <body>
-   <header>
-   <h1>noticias gerais!</h1>
-<p>aqui voce vera noticias de todos e todas nao vamos poupar ninguem</p> 
+
+  <h1>Polêmicas dos Influencers Brasil - Este Mês</h1>
+  <hr>
+
+  <!-- Notícia 1 -->
+  <div>
+    <h2>1. Virginia Fonseca</h2>
+    <img src="/tmp/guest-yjxb8t/Downloads/fcd24742f_virginia-fonseca-1.jpg" alt="Virginia Fonseca" width="300">
+    <p>Repercussão e debate sobre os lançamentos de novos produtos e parcerias nas redes sociais.</p>
+    <button onclick="votar('like1')">👍 Gostei (<span id="like1">0</span>)</button>
+    <button onclick="votar('dislike1')">👎 Não gostei (<span id="dislike1">0</span>)</button>
+  </div>
+
+  <hr>
+
+  <!-- Notícia 2 -->
+  <div>
+    <h2>2. Carlinhos Maia</h2>
+    <img src="/tmp/guest-yjxb8t/Downloads/images.jpeg" alt="Carlinhos Maia" width="300">
+    <p>Discussões nas redes após declarações polêmicas em vídeos do seu cotidiano na vila.</p>
+    <button onclick="votar('like2')">👍 Gostei (<span id="like2">0</span>)</button>
+    <button onclick="votar('dislike2')">👎 Não gostei (<span id="dislike2">0</span>)</button>
+  </div>
+
+  <hr>
+
+  <!-- Notícia 3 -->
+  <div>
+    <h2>3. Gkay (Gessica Kayane)</h2>
+    <img src="/tmp/guest-yjxb8t/Downloads/gKAY-26.webp" alt="Gkay" width="300">
+    <p>Comentários no Twitter sobre seus novos looks e preparativos de festas e eventos de moda.</p>
+    <button onclick="votar('like3')">👍 Gostei (<span id="like3">0</span>)</button>
+    <button onclick="votar('dislike3')">👎 Não gostei (<span id="dislike3">0</span>)</button>
+  </div>
+
+  <hr>
+
+  <!-- Notícia 4 -->
+  <div>
+    <h2>4. Felipe Neto</h2>
+    <img src="/tmp/guest-yjxb8t/Downloads/images (1).jpeg" alt="Felipe Neto" width="300">
+    <p>Troca de farpas e debates sobre política e temas da atualidade na internet.</p>
+    <button onclick="votar('like4')">👍 Gostei (<span id="like4">0</span>)</button>
+    <button onclick="votar('dislike4')">👎 Não gostei (<span id="dislike4">0</span>)</button>
+  </div>
+
+  <hr>
+
+  <!-- Código para registrar o clique dos botões -->
+  <script>
+    function votar(id) {
+      const elemento = document.getElementById(id);
+      let total = parseInt(elemento.innerText);
+      elemento.innerText = total + 1;
+    }
+  </script>
+
 </body>
 </html>
-<main>
-    <h2>Meu primeiro post</h2>
-    <p>Por: Pedro Augusto Carolino Da Silva</p>
-    <p>Boas-vindas ao meu novo site! Aqui vou compartilhar tudo sobre todo mundo e comentar sobre as atitudes dos outros</p>
-</main>
+
